@@ -5,7 +5,6 @@
   margin-top: 3rem;
 }
 
-
 .animation__sun {
   height: 500px;
   width: 100%;
@@ -198,7 +197,7 @@
 }
 #calculator .calculator .col-12 .btn-wrap .calculate:hover {
   transform: translate(0%, -1%);
-  box-shadow: 0px 2px 5px 1px #8D8D8D;
+  box-shadow: 0px 2px 5px 1px #8d8d8d;
 }
 #calculator .calculator .col-12 .btn-wrap .calculate:active {
   transform: translate(0%, 2%);
@@ -463,7 +462,7 @@
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
   -o-object-fit: cover !important;
-     object-fit: cover !important;
+  object-fit: cover !important;
 }
 #youtube .youtube-body .videos .video .text {
   width: 80%;
@@ -536,7 +535,7 @@
   max-width: 95%;
   border-radius: 50%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   padding: 0.3rem;
 }
 #intro .second-slider .title {
@@ -549,9 +548,9 @@
   font-size: 3.3vw;
   font-weight: bold;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #intro .second-slider .subtitle {
   left: 8%;
@@ -562,9 +561,9 @@
   color: #fff;
   font-size: 1.2vw;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #intro .second-slider .button-wrap {
   left: 8%;

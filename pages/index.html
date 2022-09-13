@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/imgs/main/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/imgs/main/favicon.png" type="image/x-icon">
     <!-- BOOTSTRAP STYLESHEET CDN STARTS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- BOOTSTRAP STYLESHEET CDN ENDS -->
     <!-- LOCAL STYLESHEETS START -->
-    <link rel="stylesheet" href="/assets/css/shared.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/shared.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
     <!-- LOCAL STYLESHEETS END -->
     <title>Türkiyədən və Amerikadan sifariş, çatdırılma xidməti | Dynamex.az</title>
 </head>
@@ -25,10 +25,93 @@
     <div id="preloader" class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
-                <img src="/assets/imgs/main/preloader.gif" alt="preloader" width="100%" height="100%" draggable="false">
+                <img src="../assets/imgs/main/preloader.gif" alt="preloader" width="100%" height="100%" draggable="false">
             </div>
         </div>
     </div>
+
+<!-- modal -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        OpenBootstrapPopup();
+    };
+    function OpenBootstrapPopup() {
+        $("#simpleModal").modal('show');
+    }
+   const closeH=()=>{
+    const modal=document.querySelector('.modal')
+const modalbck=document.querySelector('.modal-backdrop')
+    console.log('asd');
+    modal.style.display="none"
+    modalbck.style.display="none"
+
+   }
+</script>
+<div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Dynamex.az - Həcm çəkini 1 metrəyə qaldırdı!</h5>
+             
+            </div>
+            <div class="modal-body">
+               <img class="w-100" src="https://dynamex.az/frontend/web/uploads//images/new/2022-08-31-143706.png" alt="">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger"><a class="text-white text-decoration-none" href="./news.html">Ətrafli oxu</a></button>
+                <button onclick="closeH()"
+                 type="button" class="btn btn-danger closeBtn" data-dismiss="modal">Bir daha göstərmə</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal  -->
+
     <!-- HEADER STARTS -->
     <header>
         <div class="top-header py-2">
@@ -69,7 +152,7 @@
                         <div class="nav justify-content-between align-items-center">
                             <div class="bottom-header-left-side pt-1">
                                 <a href="./index.html" class="logo">
-                                    <img src="/assets/imgs/main/logo.svg" alt="Dynamex Logo" height="53" class="logo">
+                                    <img src="../assets/imgs/main/logo.svg" alt="Dynamex Logo" height="53" class="logo">
                                 </a>
                             </div>
                             <div class="bottom-header-menu">
@@ -120,11 +203,11 @@
                                 data-bs-interval="false">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="/assets/imgs/index/branches-on-map.png" class="d-block w-100"
+                                        <img src="../assets/imgs/index/branches-on-map.png" class="d-block w-100"
                                             alt="..." draggable="false">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="/assets/imgs/index/branches-on-map.png" class="d-block w-100"
+                                        <img src="../assets/imgs/index/branches-on-map.png" class="d-block w-100"
                                             alt="..." draggable="false">
                                     </div>
                                 </div>
@@ -162,7 +245,7 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="20000">
-                                        <img src="/assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
+                                        <img src="../assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
                                             alt="slider-background" draggable="false">
                                         <div class="title position-absolute">
                                             <h2>
@@ -179,11 +262,11 @@
                                             <a href="./rates.html" class="button">Ətraflı</a>
                                         </div>
                                         <div class="image position-absolute">
-                                            <img src="/assets/imgs/index/second-slider/discount-on-standart-rates.png" alt="">
+                                            <img src="../assets/imgs/index/second-slider/discount-on-standart-rates.png" alt="">
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="20000">
-                                        <img src="/assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
+                                        <img src="../assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
                                         alt="slider-background" draggable="false">
                                         <div class="title position-absolute">
                                             <h2>
@@ -200,11 +283,11 @@
                                             <a href="./services.html" class="button">Ətraflı</a>
                                         </div>
                                         <div class="image position-absolute">
-                                            <img src="/assets/imgs/index/second-slider/airplane.png" alt="">
+                                            <img src="../assets/imgs/index/second-slider/airplane.png" alt="">
                                         </div>
                                     </div>
                                     <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="/assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
+                                        <img src="../assets/imgs/index/slider-bg.svg" class="d-block w-100 position-relative" 
                                         alt="slider-background" draggable="false">
                                         <div class="title position-absolute">
                                             <h2>
@@ -219,10 +302,10 @@
                                             </p>
                                         </div>
                                         <div class="button-wrap position-absolute">
-                                            <a href="##" class="button">Ətraflı</a>
+                                            <a href="./rates.html" class="button">Ətraflı</a>
                                         </div>
                                         <div class="image position-absolute">
-                                            <img src="/assets/imgs/index/second-slider/mobile-app.png" alt="">
+                                            <img src="../assets/imgs/index/second-slider/mobile-app.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -254,7 +337,7 @@
                 <div class="row py-5">
                     <div class="card-wrap col-md-4 col-sm-12 justify-content-center d-flex">
                         <div class="card align-items-center border-0 w-100">
-                            <img src="/assets/imgs/index/how-to-order.gif" class="card-img-top" alt="how-to-order">
+                            <img src="../assets/imgs/index/how-to-order.gif" class="card-img-top" alt="how-to-order">
                             <h5 class="card-title">Necə sifariş edim?</h5>
                             <p class="card-text">
                                 Məhsulu seçin <br>
@@ -263,13 +346,13 @@
                                 Yaxud bəyan edin <br>
                             </p>
                             <div class="more d-flex align-items-end h-100">
-                                <a href="##">Ətraflı</a>
+                                <a href="./rates.html">Ətraflı</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-wrap col-md-4 col-sm-12 justify-content-center d-flex">
                         <div class="card align-items-center border-0 w-100">
-                            <img src="/assets/imgs/index/payment.gif" class="card-img-top" alt="how-to-order">
+                            <img src="../assets/imgs/index/payment.gif" class="card-img-top" alt="how-to-order">
                             <h5 class="card-title">Ödəniş</h5>
                             <p class="card-text">
                                 Visa, Master bank kartları <br>
@@ -278,13 +361,13 @@
                                 Çatdırılma xidməti üçün yerində ödəniş
                             </p>
                             <div class="more d-flex align-items-end h-100">
-                                <a href="##">Ətraflı</a>
+                                <a href="./services.html">Ətraflı</a>
                             </div>
                         </div>
                     </div>
                     <div class="card-wrap col-md-4 col-sm-12 justify-content-center d-flex">
                         <div class="card align-items-center border-0 w-100">
-                            <img src="/assets/imgs/index/delivery.gif" class="card-img-top" alt="how-to-order">
+                            <img src="../assets/imgs/index/delivery.gif" class="card-img-top" alt="how-to-order">
                             <h5 class="card-title">Çatdırılma</h5>
                             <p class="card-text">
                                 Bağlama Türkiyə və ya Amerika anbarına qəbul edilir.
@@ -292,7 +375,7 @@
                                 Bakı,Gəncə və ya Sumqayıt ofisindən bağlamalar təhvil verilir.
                             </p>
                             <div class="more d-flex align-items-end h-100">
-                                <a href="##">Ətraflı</a>
+                                <a href="./faq.html">Ətraflı</a>
                             </div>
                         </div>
                     </div>
@@ -914,21 +997,21 @@
                         <div class="wrapper">
                             <div class="o-carousel owl-carousel">
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/memar-ecemi-tehvil-mentegesi.png" alt="">
+                                    <img src="../assets/imgs/news/memar-ecemi-tehvil-mentegesi.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Dynamex MEMAR ƏCƏMİ təhvil məntəqəsin açdı – Türkiyə və Amerikadan daşınma.</b>
                                         <span class="posted-date d-block">28.06.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/yaygeyimleri.png" alt="">
+                                    <img src="../assets/imgs/news/yaygeyimleri.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Yay geyimlərinə heç gözləmədiyiniz fürsət təklifi!</b>
                                         <span class="posted-date d-block">28.07.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/bakixanovachildi.png" alt="">
+                                    <img src="../assets/imgs/news/bakixanovachildi.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">
                                             Dynamex BAKIXANOV təhvil məntəqəsin açdı – Türkiyə və Amerikadan daşınma.</b>
@@ -936,56 +1019,56 @@
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/yayheyacani.jpg" alt="">
+                                    <img src="../assets/imgs/news/yayheyacani.jpg" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">YAY həyacanını 0% komissiya ilə daha da artırdıq - Dynamex.az</b>
                                         <span class="posted-date d-block">22.05.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/Yeni-is-saatlari.png" alt="">
+                                    <img src="../assets/imgs/news/Yeni-is-saatlari.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Filial və Təhvil məntəqələrimiz yeni iş saatları</b>
                                         <span class="posted-date d-block">20.05.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/bayram-gunleri.png" alt="">
+                                    <img src="../assets/imgs/news/bayram-gunleri.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Bayram günlərində iş qrafikimiz</b>
                                         <span class="posted-date d-block">30.04.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/azin-her-noqtesinde.png" alt="">
+                                    <img src="../assets/imgs/news/azin-her-noqtesinde.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Azərbaycanın hər bir nöqtəsində sizlərin Xidmətinizdəyik - Dynamex.az</b>
                                         <span class="posted-date d-block">27.04.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/nezerine1.png" alt="">
+                                    <img src="../assets/imgs/news/nezerine1.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Müştərilərimizin nəzərinə - Dynamex.az</b>
                                         <span class="posted-date d-block">19.04.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/bir-yox.jpg" alt="">
+                                    <img src="../assets/imgs/news/bir-yox.jpg" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Sizə 1 YOX, 2 YOX 3 MÖHTƏŞƏM kampaniya təklif edirik!</b>
                                         <span class="posted-date d-block">26.03.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/novzur.png" alt="">
+                                    <img src="../assets/imgs/news/novzur.png" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Novruz 0% komissiya ilə gətirdik - Dynamex.az</b>
                                         <span class="posted-date d-block">16.03.2022</span>
                                     </div>
                                 </a>
                                 <a href="#" class="card col-lg-3 col-md-5 col-sm-12">
-                                    <img src="/assets/imgs/news/Yay aylarında 28 may filialımızın iş saatlarını artırdıq.jpg" alt="">
+                                    <img src="../assets/imgs/news/Yay aylarında 28 may filialımızın iş saatlarını artırdıq.jpg" alt="">
                                     <div class="detail d-flex flex-column justify-content-evenly">
                                         <b class="title d-block">Yay aylarında 28 may filialımızın iş saatlarını artırdıq.</b>
                                         <span class="posted-date d-block">17.07.2022</span>
@@ -1013,7 +1096,7 @@
                                     <div class="y-carousel owl-carousel d-flex justify-content-center">
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/how-fill-decleration.png" alt="">
+                                                <img src="../assets/imgs/index/youtube/how-fill-decleration.png" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>Türkiyədən çatdırılma | Bəyannamə necə doldurulur?</b>
@@ -1021,7 +1104,7 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/whats-tracking-id.jpg" alt="">
+                                                <img src="../assets/imgs/index/youtube/whats-tracking-id.jpg" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>#LeylaCavablayır Tracking ID nədir?</b>
@@ -1029,7 +1112,7 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/where-is-dynamex.png" alt="">
+                                                <img src="../assets/imgs/index/youtube/where-is-dynamex.png" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>Dynamex haradadır?</b>
@@ -1037,7 +1120,7 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/black-friday-2022.png" alt="">
+                                                <img src="../assets/imgs/index/youtube/black-friday-2022.png" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>#LeylaCavablayır Noyabr - endirimlər ayı</b>
@@ -1045,7 +1128,7 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/order-for-me.jpg" alt="">
+                                                <img src="../assets/imgs/index/youtube/order-for-me.jpg" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>#LeylaCavablayır Mənim üçün sifariş et</b>
@@ -1053,7 +1136,7 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/how-fill-decleration.png" alt="">
+                                                <img src="../assets/imgs/index/youtube/how-fill-decleration.png" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>Dynamex.az-da bəyannamə necə əlavə edilir?</b>
@@ -1061,14 +1144,14 @@
                                         </a>
                                         <a href="##" class="video">
                                             <div class="thumbnail">
-                                                <img src="/assets/imgs/index/youtube/dynamex-app-published.png" alt="">
+                                                <img src="../assets/imgs/index/youtube/dynamex-app-published.png" alt="">
                                             </div>
                                             <div class="text">
                                                 <b>Dynamex mobil tətbiqi istifadəyə verildi.</b>
                                             </div>
                                         </a>
                                         <!-- <a href="##" class="video">
-                                            <img src="/assets/imgs/news/memar-ecemi-tehvil-mentegesi.png" alt="">
+                                            <img src="../assets/imgs/news/memar-ecemi-tehvil-mentegesi.png" alt="">
                                             <div class="text">
                                                 <b></b>
                                             </div>
@@ -1088,22 +1171,22 @@
                         <div class="wrapper">
                             <div class="s-carousel owl-carousel">
                                 <a class="store" href="https://www.defacto.com.tr/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-defacto.png" alt="defacto">
+                                    <img src="../assets/imgs/index/stores/m-defacto.png" alt="defacto">
                                 </a>
                                 <a class="store" href="https://www.lcwaikiki.com/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-lc-waikiki.png" alt="lc-waikiki">
+                                    <img src="../assets/imgs/index/stores/m-lc-waikiki.png" alt="lc-waikiki">
                                 </a>
                                 <a class="store" href="https://shop.mango.com/tr/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-mango.png" alt="mango">
+                                    <img src="../assets/imgs/index/stores/m-mango.png" alt="mango">
                                 </a>
                                 <a class="store" href="https://www.n11.com/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-n11.jpg" alt="n11">
+                                    <img src="../assets/imgs/index/stores/m-n11.jpg" alt="n11">
                                 </a>
                                 <a class="store" href="https://www.pierrecardin.com.tr/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-pierre-cardin.jpg" alt="pierre-cardin">
+                                    <img src="../assets/imgs/index/stores/m-pierre-cardin.jpg" alt="pierre-cardin">
                                 </a>
                                 <a class="store" href="https://www.trendyol.com/" target="_blank">
-                                    <img src="/assets/imgs/index/stores/m-trendyol.png" alt="trendyol">
+                                    <img src="../assets/imgs/index/stores/m-trendyol.png" alt="trendyol">
                                 </a>
                             </div>
                          </div>
@@ -1121,7 +1204,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12">
                             <a href="./index.html" class="white-logo">
-                                <img class="mb-4" src="/assets/imgs/main/logo-white.svg" alt="Dynamex Logo" width="160">
+                                <img class="mb-4" src="../assets/imgs/main/logo-white.svg" alt="Dynamex Logo" width="160">
                             </a>
                             <p class="mb-5"><span class="iconify" data-icon="mdi:copyright"></span> 2022
                                 Dynamex.az<br>Bütün hüquqlar qorunur</p>
@@ -1153,10 +1236,10 @@
                                     <a href='https://play.google.com/store/apps/details?id=az.dynamex.app'
                                         target="_blank">
                                         <img alt='Get it on Google Play' width="150"
-                                            src='/assets/imgs/main/google-play.png' />
+                                            src='../assets/imgs/main/google-play.png' />
                                     </a>
                                     <a href="https://apps.apple.com/ca/app/dynamex/id1559258269" target="_blank">
-                                        <img src="/assets/imgs/main/app-store.png" width="135" alt="">
+                                        <img src="../assets/imgs/main/app-store.png" width="135" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -1237,10 +1320,9 @@
     </footer style="filter:hue-rotate(-180deg)">
     <!-- FOOTER ENDS -->
     <!-- BOOTSTRAP JAVASCRIPT CDN STARTS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP JAVASCRIPT CDN ENDS -->
+
     <!-- ICONIFY JAVASCRIPT CDN STARTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"
         integrity="sha512-lYMiwcB608+RcqJmP93CMe7b4i9G9QK1RbixsNu4PzMRJMsqr/bUrkXUuFzCNsRUo3IXNUr5hz98lINURv5CNA=="
@@ -1252,10 +1334,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JQUERY CDN ENDS -->
     <!-- LOCAL JS STARTS -->
-    <script src="/assets/js/shared.js"></script>
-    <script src="/assets/js/index.js"></script>
-    <script src="/assets/js/calculator.js"></script>
-    <script src="/assets/js/rates.js"></script>
+    <script src="../assets/js/shared.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/calculator.js"></script>
+    <script src="../assets/js/rates.js"></script>
     <!-- LOCAL JS ENDS -->
     <!-- COUNTUP CDN STARTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.js"
@@ -1265,7 +1347,7 @@
     <!-- COUNTUP CDN ENDS -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4../assets/owl.carousel.min.css">
 </body>
 
 </html>
